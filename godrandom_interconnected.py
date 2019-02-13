@@ -33,6 +33,7 @@
 #
 # {0: 2603532, 1: 4042750, 2: 2709888, 3: 1643734, 4: 844314, 5: 311491, 6: 44286}
 # 
+# python random.randint(min, max) results
 # 0-6 Away Total: 12,199,995
 # 0 Away:  21.34%
 # 1 Away:  33.14 %
@@ -41,6 +42,19 @@
 # 4 Away:  6.92 %
 # 5 Away:  2.55 %
 # 6 Away:  3.63 %
+# 
+# quantumrandom statistics:
+# {0: 225, 1: 346, 2: 255, 3: 117, 4: 43, 5: 14, 6: 1}
+# Only 1 1K Data Set, this is due to quantumrandom.randint(min,max) being time consuming
+# 0-6 Away Total: 1,000
+# 0 Away: 22.5 %
+# 1 Away: 34.6 %
+# 2 Away: 25.5 %
+# 3 Away: 11.7 %
+# 4 Away: 4.3 %
+# 5 Away: 1.4 %
+# 6 Away: 1 %
+#
 
 import random
 from collections import Counter
