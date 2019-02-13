@@ -65,7 +65,7 @@ highDefault = 13
 # debug = 'TRUE' or 'FALSE'
 debug = 'FALSE'
 
-def wrap(numberToBeWrapped, start=1, limit=13, origin=1):
+def wrap(numberToBeWrapped, start=lowDefault, limit=highDefault, origin=1):
   if start == 0:
      boundX = start + (numberToBeWrapped - start ) % (limit + 1 - start)  
   else:
