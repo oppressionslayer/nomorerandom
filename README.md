@@ -4,7 +4,7 @@ This code helps prove that random is not disordered. It is in fact order structu
 
 This program confirms something awesome about the nature of random number and guesses: You can modify this and now that when you have a number generated, you can guess within a distance, and predict with probability how close that number will be to your guess. Truly, this is a fundamental feature of any RNG you run this programs logic with, but i haven't tried it with any fancy ones yet. Just the pwned Google and your laptops python RNG. Thanks.
 
-Will, Lars or God.
+Will, Lars or William.
 
 Test the following with the python script attached, or quickly test and confirm here:
 https://www.google.com/search?q=random+number+generator
