@@ -88,9 +88,9 @@
 import random
 from collections import Counter
 
-# Default is 1,13 ehich is the size of a deck of cards
+# Use 1,13 which is the size of a deck of cards, to simulate a deck of cards
 lowDefault = 1
-highDefault = 13
+highDefault = 10
 
 # Change to choose an exact distance to see hoe distance influences rhe 
 # closeness of your guess by twofold bounded by your distance. 
