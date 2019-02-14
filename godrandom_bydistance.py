@@ -86,20 +86,52 @@
 # 
 
 import random
+import argparse
 from collections import Counter
 
-# Use 1,13 which is the size of a deck of cards, to simulate a deck of cards
-lowDefault = 1
-highDefault = 10
 
-# Change to choose an exact distance to see hoe distance influences rhe 
-# closeness of your guess by twofold bounded by your distance. 
-dist = int(highDefault * .33)
+maxmin = 1
+maxmax = 10
+defdist = int(maxmax * .33)
+definterval = 300000
+defdebug = 'FALSE'
+
+parser = argparse.ArgumentParser(description='Process random numbers with structured order. ' +
+                   'For an intersting example of a deck of cards use: ' +
+                   'godrandom_bydistance.py --min 1 --min 13 --dist 2 --debug TRUE')parser.add_argument('--min', dest='lowDefault',type=int,
+                    default=maxmin,
+                    help='the minimum for your data set, default is 1')
+parser.add_argument('--max', dest='highDefault', type=int,
+                    default=maxmax,
+                    help='the maximum for your data set, default is 10')
+parser.add_argument('--dist', dest='defDist', type=int,
+                    default=argparse.SUPPRESS,
+                    help='The distance of your boundries. Default to max * .33')
+parser.add_argument('--interval', dest='defInterval', type=int,
+                    default=definterval,
+                    help='How many iterations to run. Default is 300,000')
+parser.add_argument('--debug', dest='defDebug',
+                    default=defdebug,
+                    help='Default is FALSE. Set to TRUE to print results')
+
+args = parser.parse_args()
+
+# Default is 1,13 ehich is the size of a deck of cards
+lowDefault = args.lowDefault
+highDefault = args.highDefault
+interval = args.defInterval
+
+# Change to choose an exact distance to see hoe distance influences rhe
+# closeness of your guess by twofold bounded by your distance.
+try:
+  dist = args.defDist
+except:
+  dist = int(round(args.highDefault *  .33))
 
 # debug = 'TRUE' or 'FALSE'
-debug = 'FALSE'
+debug = args.defDebug
 
-def wrap(numberToBeWrapped, start=1, limit=13, origin=1):
+def wrap(numberToBeWrapped, start=lowDefault, limit=highDefault, origin=1):
   if start == 0:
      boundX = start + (numberToBeWrapped - start ) % (limit + 1 - start)  
   else:
@@ -149,7 +181,7 @@ closeness.append(newdistance)
 previous, current, _, _, newdistance = randDistance(5, dist, lowDefault,highDefault)
 closeness.append(newdistance)
 
-for x in range (1, 300000):
+for x in range (1, interval):
    closeness.append(newdistance)
    previous, current, distAdd, distSub, newdistance =  randDistance(current, dist, lowDefault, highDefault)
    if debug == 'TRUE':
