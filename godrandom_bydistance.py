@@ -35,14 +35,14 @@
 # You can modify this program so that the previous and current are always the same 2 numbers
 # to see that the results still follow this structure.
 #
-# {0: 4614594, 1: 9231939, 2: 9229865, 3: 4616544, 4: 2307059}
+# Grouped by Away. 0: is 0 Away, 1: is 1 Away, etc.
+# {0: 6000832, 1: 12002397, 2: 8996037, 3: 3000735}
 # 
 # 0-4 Away Total: 30,000,000
-# 0 Away:  15.38 %
-# 1 Away:  30.77 %
-# 2 Away :  30.77 %
-# 3 Away:  15.39 %
-# 4 Away:  7.69 %%
+# 0 Away:  20.00 %
+# 1 Away:  40.00 %
+# 2 Away :  29.998679 %
+# 3 Away:  10.00 %
 # 
 # Here are two runs using min=1, max=50. DISTANCE FROM PREVIOUS RANDOM NUMBER for the first run is 5, second run is 10.
 # That means if a random number is 30, We use 25 and 35 for our guesses. You can see that setting the distance, 
