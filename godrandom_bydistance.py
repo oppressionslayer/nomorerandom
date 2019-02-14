@@ -35,10 +35,25 @@
 # You can modify this program so that the previous and current are always the same 2 numbers
 # to see that the results still follow this structure.
 #
+# Example, for any number in Base 10
+# Let's choose '1' as an example.
+# '1'
+# Boundries in base10 are 8 and 4. Determined by int(Base10 * .33) which is 3 and 
+# 1 minus the boundry is 8 and 1 plus the boundry is 4
+#
+# 3 Away -- _ , 1 . ( _ represents a duplicate number, so it is removed )
+# 2 Away -- _ , 10
+# 1 Away -- 5 , 9
+# 0 Away -- 4 , 8   ( A number following '1' will follow this algorithim, with 4 , 8 being 0 Away )
+# 1 Away -- 3 , 7
+# 2 Away -- 2 , 6
+# 3 Away -- _ , _
+#
+# Statitistics to confirm this ordered structure:
 # Grouped by Away. 0: is 0 Away, 1: is 1 Away, etc.
 # {0: 6000832, 1: 12002397, 2: 8996037, 3: 3000735}
 # 
-# 0-4 Away Total: 30,000,000
+# 0-3 Away Total: 30,000,000
 # 0 Away:  20.00 %
 # 1 Away:  40.00 %
 # 2 Away :  29.998679 %
