@@ -43,12 +43,43 @@
 # 2 Away :  30.77 %
 # 3 Away:  15.39 %
 # 4 Away:  7.69 %%
+# 
+# Here are two runs using min=1, max=50. DISTANCE FROM PREVIOUS RANDOM NUMBER for the first run is 5, second run is 10.
+# That means if a random number is 30, We use 25 and 35 for our guesses. You can see that setting the distance, 
+# between 5 and 10 had an affect on how often close numbers are randomly generated. Just by changing our two numbers 
+# that we have more chances to guess close than further away. 2 to 1 almost
+# 
+# NOTICE BELOW THAT MODIFICATIONS MADE TO DISTANCE CHANGE THE STATISTICS OF THE RNG'S CLOSENESS TO THE GUESSES. BY 
+# CHANGING DISTANCE YOU AFFECT THE STRUCTURE OF THE RANDOMNESS SHAPE INA VISIBLE WAY. IF THE STASTICS WAD NOT 
+# INTERCONNECTED, WE WOULD EXPECT THE DISTRIBUTION TO REMAIN EVEN ACROSS THE DATA. THIS HELPS VISIBLY SEE
+# THAT RANDOM DATA CAN BE SEEN TO HAVE STRUCTURE BOUNDED AND BASED BY DISTANCE TO PREVIOUS NUMBERS
+# 
+# By distance 5 ( If 50 is the random number, our guesses for the next random are 45 and 65 ) See how our odds of getting < 5
+# Away compare to the next set of data. Guessing within a bounds affects the odds that our guess will be close or not
+# {0: 6081, 1: 11850, 2: 11919, 3: 11983, 4: 12065, 5: 8901, 6: 6085, 7: 6063, 8: 6026, 9: 5989, 10: 5998, 11: 5984,
+#;12: 6045, 13: 5978, 14: 5914, 15: 6005, 16: 5945, 17: 6024, 18: 5877, 19: 6179, 20: 5927, 21: 6225, 22: 5991, 
+# 23: 5923, 24: 6091, 25: 6035, 26: 6026, 27: 5971, 28: 5843, 29: 6049, 30: 5955, 31: 5912, 32: 5986, 33: 6056,
+# 34: 6047, 35: 6186, 36: 5946, 37: 6070, 38: 6075, 39: 5844, 40: 6048, 41: 5930, 42: 6001, 43: 6055, 44: 5924, 45: 2974}
+#
+#
+# By distance 10 ( If 50 is the random number, our guesses for the next random are 40 and 60 ) We have an almost 40% chance 
+# of getting close to our guesses. 
+# {0: 5930, 1: 12123, 2: 12075, 3: 11824, 4: 12057, 5: 11921, 6: 12154, 7: 12280, 8: 12000, 9: 11943, 10: 8945, 11: 5998,
+# 12: 6024, 13: 6141, 14: 6066, 15: 5922, 16: 5985, 17: 6058, 18: 5881, 19: 6030, 20: 6028, 21: 5897, 22: 6004, 23: 5976,
+# 24: 6032, 25: 6022, 26: 5993, 27: 5952, 28: 6021, 29: 5921, 30: 5924, 31: 5970, 32: 6068, 33: 6030, 34: 6041, 35: 5887,
+# 36: 5920, 37: 5998, 38: 6036, 39: 5916, 40: 3008}
+# 
 
 import random
 from collections import Counter
 
+# Default is 1,13 ehich is the size of a deck of cards
 lowDefault = 1
 highDefault = 13
+
+# Change to choose an exact distance to see hoe distance influences rhe 
+# closeness of your guess by twofold bounded by your distance. 
+dist = int(highDefault * .33)
 
 # debug = 'TRUE' or 'FALSE'
 debug = 'FALSE'
@@ -96,7 +127,6 @@ def randDistance(current, distance, low, high):
   newDistance = min(distAdd, distSub) #min(distAddOne, distSubOneL, distSubOneH, distAddTwo, distSubTwoL, distSubTwoH)
   return newResult, current, guessOne, guessTwo, newDistance
 
-dist = int(highDefault * .33)
 closeness = []
 
 previous, current, _, _, newdistance = randDistance(5, dist, lowDefault,highDefault)
@@ -115,5 +145,6 @@ for x in range (1, 300000):
    #   print ( 'previous: ', beforeprevious, 'current: ', previous, 'newCard: ', current, 'distance: ', newdistance)
 
 a = dict()
+closeness = sorted(closeness)
 a = dict(Counter(closeness))
 print(a)
