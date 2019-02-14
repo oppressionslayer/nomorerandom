@@ -98,7 +98,8 @@ defdebug = 'FALSE'
 
 parser = argparse.ArgumentParser(description='Process random numbers with structured order. ' +
                    'For an intersting example of a deck of cards use: ' +
-                   'godrandom_bydistance.py --min 1 --min 13 --dist 2 --debug TRUE')parser.add_argument('--min', dest='lowDefault',type=int,
+                   'godrandom_bydistance.py --min 1 --min 13 --dist 2 --debug TRUE')
+parser.add_argument('--min', dest='lowDefault',type=int,
                     default=maxmin,
                     help='the minimum for your data set, default is 1')
 parser.add_argument('--max', dest='highDefault', type=int,
