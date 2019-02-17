@@ -1,0 +1,178 @@
+Enter an integer from 1 to 13: 5
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 11 exactly interconnected with Previous Card: 3 and Your Guess: 5 by Distance: 0 Distance Average: 0
+
+Enter an integer from 1 to 13: 2
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 3 interconnected with Previous Card: 11 and Your Guess: 2 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 5
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 2 exactly interconnected with Previous Card: 3 and Your Guess: 5 by Distance: 0 Distance Average: 0
+
+Enter an integer from 1 to 13: 12
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 11 interconnected with Previous Card: 2 and Your Guess: 12 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 2
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 3 interconnected with Previous Card: 11 and Your Guess: 2 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 5
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 4 interconnected with Previous Card: 3 and Your Guess: 5 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 8
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 6 interconnected with Previous Card: 4 and Your Guess: 8 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 9
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 8 interconnected with Previous Card: 6 and Your Guess: 9 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 11
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 7 interconnected with Previous Card: 8 and Your Guess: 11 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 9
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 1 interconnected with Previous Card: 7 and Your Guess: 9 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 6 interconnected with Previous Card: 1 and Your Guess: 4 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 5
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 13 interconnected with Previous Card: 6 and Your Guess: 5 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 10 interconnected with Previous Card: 13 and Your Guess: 4 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 11
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 1 exactly interconnected with Previous Card: 10 and Your Guess: 11 by Distance: 0 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 1 interconnected with Previous Card: 1 and Your Guess: 4 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 1 interconnected with Previous Card: 1 and Your Guess: 4 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 6 interconnected with Previous Card: 1 and Your Guess: 4 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 3
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 9 exactly interconnected with Previous Card: 6 and Your Guess: 3 by Distance: 0 Distance Average: 1
+
+Enter an integer from 1 to 13: 11
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 6 interconnected with Previous Card: 9 and Your Guess: 11 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 3
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 1 interconnected with Previous Card: 6 and Your Guess: 3 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 2 interconnected with Previous Card: 1 and Your Guess: 4 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 12
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 6 interconnected with Previous Card: 2 and Your Guess: 12 by Distance: 3 Distance Average: 1
+
+Enter an integer from 1 to 13: 3
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 12 interconnected with Previous Card: 6 and Your Guess: 3 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 3
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 7 interconnected with Previous Card: 12 and Your Guess: 3 by Distance: 2 Distance Average: 1
+
+Enter an integer from 1 to 13: 9
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 1 interconnected with Previous Card: 7 and Your Guess: 9 by Distance: 1 Distance Average: 1
+
+Enter an integer from 1 to 13: 4
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 10 exactly interconnected with Previous Card: 1 and Your Guess: 4 by Distance: 0 Distance Average: 1
+
+Enter an integer from 1 to 13: 11
+From the previous card, calculate the sum/diff between it and the next card.
+From those values, what is the distance from your Guess on Average?
+Think about how you can use that information in poker/blackjack
+New Card: 12 exactly interconnected with Previous Card: 10 and Your Guess: 11 by Distance: 0 Distance Average: 1
+
+Enter an integer from 1 to 13: Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+KeyboardInterrupt
+>>> distAverage / x
+1.1071428571428572
+
+
+Randomly chosen Guess over 6.4 million runs same algorithm:
+
+>>> x
+6484713.0
+>>> distAverage
+10413486
+>>> distAverage / x
+1.6058514848691068  ( So 2 Cards Away )
+>>> 
