@@ -180,7 +180,7 @@ for x in range (1, interval):
    closeness.append(newdistance)
    previous, current, distAdd, distSub, newdistance =  randDistance(current, dist, lowDefault, highDefault)
    if debug == 'TRUE':
-       print ( 'previous: ', previous, 'new number: ', current, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from Guesses: ', newdistance)
+       print ( 'RNG Number: ', current, 'Main Guess: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
 
 a = dict()
 closeness = sorted(closeness)
