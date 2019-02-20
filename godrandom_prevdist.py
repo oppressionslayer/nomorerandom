@@ -97,6 +97,7 @@ definterval = 300000
 defdebug = 'FALSE'
 defrandomfile = type(None)
 defjustdistance= 'FALSE'
+defonlyprev = 'FALSE'
 current = 1
 
 parser = argparse.ArgumentParser(description='Process random numbers with structured order. ' +
@@ -108,7 +109,7 @@ parser.add_argument('--min', dest='lowDefault',type=int,
 parser.add_argument('--max', dest='highDefault', type=int,
                     default=maxmax,
                     help='the maximum for your data set, default is 10')
-parser.add_argument('--dist', dest='defDist', type=int,
+parser.add_argument('--dist', dest='defDist', #, type=int,
                     default=argparse.SUPPRESS,
                     help='The distance of your boundries. Default to max * .33')
 parser.add_argument('--interval', dest='defInterval', type=int,
@@ -120,6 +121,9 @@ parser.add_argument('--debug', dest='defDebug',
 parser.add_argument('--randomfile', dest='defRandomFile',
                     #default=defrandomfile,
                     help='Default is no file if not used. example: --randomfile filename')
+parser.add_argument('--onlyprevious', dest='defOnlyPrev',
+                    default=defonlyprev,
+                    help='Default is to match next RNG with Only the Previous RNG number.')
 parser.add_argument('--noprevmatch', dest='defJustDistance',
                     #default=defjustdistance,
                     help="If the previous RNG is 25, and dist is 5, the numbers we match are " + 
@@ -133,8 +137,10 @@ highDefault = args.highDefault
 interval = args.defInterval
 randomdata= type(None)
 rdatalen = type(None)
+distance = defdist
 randomfile = args.defRandomFile
 justprevious = args.defJustDistance
+onlyprevious = args.defOnlyPrev
 
 # Change to choose an exact distance to see hoe distance influences rhe
 # closeness of your guess by twofold bounded by your distance.
@@ -182,10 +188,16 @@ def randDistance(current, distance, low, high, iternum=0):
   newResult = current
   randlength = int(len(str(high)))
   startloc = int(randlength * iternum) 
+  if str(dist) == ('random' or 'rand'):
+    distance = random.randint(lowDefault, highDefault)
+  else:
+    distance = int(dist)
+
   try:
      current = (int(rdata[startloc:startloc+randlength]) - 1) % high + 1
   except:
      current = random.randint(low,high)
+
   guessOne , distOne = wrap(newResult-distance, low, high, current)
   guessTwo , distTwo  = wrap(newResult+distance, low, high, current)
   if current == (newResult, guessOne , guessTwo):
@@ -203,9 +215,15 @@ def randDistance(current, distance, low, high, iternum=0):
     if debug == 'TRUE':
        print("Match with Previous # as well as distance Guess #1, and #2, so matching new RNG with Previous #, Guess #1, Guess#2")
     distAdd = min(distOne,distTwo, distPrevious)
+  if onlyprevious == 'TRUE':
+      #_ , distOne = wrap(current-distance, low, high, guessPrevious)
+      #_ , distTwo  = wrap(current+distance, low, high, guessPrevious)
+      distOne = distPrevious
+      distTwo = distPrevious
+      distAdd = min(distPrevious, distOne, distTwo)
   distSub = min(distOne,distTwo) #,distThree,distFour)
   newDistance = min(distAdd, distSub)
-  return newResult, current, guessOne, guessTwo, newDistance
+  return newResult, current, guessOne, guessTwo, newDistance, distance
 
 closeness = []
 
@@ -217,19 +235,28 @@ except:
 rdata = randomdata
 
 for x in range (1, interval):
-   previous, current, distAdd, distSub, newdistance =  randDistance(current, dist, lowDefault, highDefault, int(str(x)))
+   #if str(dist) == ('random' or 'rand'):
+   #  distance = random.randint(lowDefault, highDefault)
+   #else:
+   #  distance = int(dist)
+   previous, current, distAdd, distSub, newdistance, distance  =  randDistance(current, dist, lowDefault, highDefault, int(str(x)))
    closeness.append(newdistance)
-   if justprevious != 'TRUE':
+   if onlyprevious == 'TRUE':
+       if debug == 'TRUE':
+         print ( 'New RNG Number: ', current, ' Distance to +/- Main Guess: ', newdistance, 'Main Guess: ', previous, 'distance from RNG to Guesses: ', newdistance)
+   elif onlyprevious != 'TRUE':
+     if justprevious != 'TRUE':
        if debug == 'TRUE':
          print('Comparing New RNG with Previous # and Guess #1 and Guess #2')
-         print ( 'New RNG Number: ', current, 'Main Guess: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
-   else: 
+         print ( 'New RNG Number: ', current, ' Distance +/- Main Guess: ', distance, 'Main Guess: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
+     else: 
        if debug == 'TRUE':
-         print ( 'New RNG Number: ', current, 'Previous: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
+         print ( 'New RNG Number: ', current, ' Distance +/-  Previous: ', distance, 'Previous: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
          print('Only guessing with Guess #1 and Guess #2, Previous Number is only used for determining the next guess')
    if debug == 'TRUE':
-     if randomfile is not type(None):
-       print("When using random integers from a file, we have to conform those integers with the our range. If our range is min 1, max 13, we " +
+       if randomfile: 
+         print('--randomfile is: ', randomfile, type(randomfile))
+         print("When using random integers from a file, we have to conform those integers within our range. If our range is min 1, max 13, we " +
              "Use MOD to wrap any higher number in the file to be within 1 and 13.")
 
 a = dict()
