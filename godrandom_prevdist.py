@@ -183,7 +183,7 @@ def randDistance(current, distance, low, high, iternum=0):
   randlength = int(len(str(high)))
   startloc = int(randlength * iternum) 
   try:
-     current = int(rdata[startloc:startloc+randlength])
+     current = (int(rdata[startloc:startloc+randlength]) - 1) % high + 1
   except:
      current = random.randint(low,high)
   guessOne , distOne = wrap(newResult-distance, low, high, current)
@@ -227,6 +227,10 @@ for x in range (1, interval):
        print ( 'New RNG Number: ', current, 'Previous: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
        if debug == 'TRUE':
          print('Only guessing with Guess #1 and Guess #2, Previous Number is only used for determining the next guess')
+   if debug == 'TRUE':
+     if randomfile is not type(None):
+       print("When using random integers from a file, we have to conform those integers with the our range. If our range is min 1, max 13, we " +
+             "Use MOD to wrap any higher number in the file to be within 1 and 13.")
 
 a = dict()
 closeness = sorted(closeness)
