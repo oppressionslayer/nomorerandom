@@ -220,9 +220,9 @@ for x in range (1, interval):
    previous, current, distAdd, distSub, newdistance =  randDistance(current, dist, lowDefault, highDefault, int(str(x)))
    closeness.append(newdistance)
    if justprevious != 'TRUE':
-       print ( 'New RNG Number: ', current, 'Main Guess: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
        if debug == 'TRUE':
          print('Comparing New RNG with Previous # and Guess #1 and Guess #2')
+         print ( 'New RNG Number: ', current, 'Main Guess: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
    else: 
        print ( 'New RNG Number: ', current, 'Previous: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
        if debug == 'TRUE':
