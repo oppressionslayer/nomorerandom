@@ -224,8 +224,8 @@ for x in range (1, interval):
          print('Comparing New RNG with Previous # and Guess #1 and Guess #2')
          print ( 'New RNG Number: ', current, 'Main Guess: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
    else: 
-       print ( 'New RNG Number: ', current, 'Previous: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
        if debug == 'TRUE':
+         print ( 'New RNG Number: ', current, 'Previous: ', previous, 'Guess #1: ', distAdd, 'Guess #2: ', distSub, 'distance from RNG to Guesses: ', newdistance)
          print('Only guessing with Guess #1 and Guess #2, Previous Number is only used for determining the next guess')
    if debug == 'TRUE':
      if randomfile is not type(None):
