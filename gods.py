@@ -1,5 +1,17 @@
 # Copyright William Lars Rocha
 #
+#   I retain the rights to all intellectual property of this code and it's methods.
+#   Infinite Compression cannot be used without my express permission
+#   Any use of Infinite Compression commercially or publicly using my ideas or methods 
+#   will be prosecuted by Law. No using in your free software without my permission
+#
+#   Compression Makers. You must hire me or retain my permission with very low royalties
+#   to use this code or its ideas pertaining to infinite compression. I'm very easy to deal
+#   with and am fair with use rights. 
+#
+#  
+#
+#
 # Infinite Compression. 
 # 
 # Commercial Use Available with my permission in writing and royalties
