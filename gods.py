@@ -68,6 +68,7 @@
 # gods array to godcompression which creates the original source all the way up to 
 # AMillionRandomDigits.zip, all provided in this repository on github. 
 
+from bitstring import Bits
 
 def twos_complement(input_value, bits): 
     mask = 2**(bits - 1) - 1 
