@@ -7,7 +7,18 @@
 #
 #   Compression Makers. You must hire me or retain my permission with very low royalties
 #   to use this code or its ideas pertaining to infinite compression. I'm very easy to deal
-#   with and am fair with use rights. 
+#   with and am fair with use rights. I can work on contract and like to work remotely.
+#   I'm also solving other major theories and have uncovered all Primes in (e) and other
+#   uses for predicting random numbers. I can predict random numbers so well that you 
+#   would think i'm influencing googles random number generator. No use of my methods
+#   to predict random numbers can be used without my express permission
+#
+#
+#   Google, i'm available for hire. Cracking randomness as having interconnectedness will
+#   be of use to all scientists who have been plagued with random data. They can now see
+#   it as having structure, and recipricocity and interconnectednes via a distance formula
+#   and no use of these ideas of recipricocity, interconnectednes via a distance, using 
+#   number complements, and other ideas here are allowed by anyone as i retain there copyrights.
 #
 #  
 #
