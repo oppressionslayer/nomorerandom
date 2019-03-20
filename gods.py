@@ -70,9 +70,8 @@
 
 
 def twos_complement(input_value, bits): 
-     '''Calculates a two's complement integer from the given input value's bits''' 
-     Imask = 2**(bits - 1) - 1 
-    Ireturn -(input_value & mask) + (input_value & ~mask) 
+    mask = 2**(bits - 1) - 1 
+    return -(input_value & mask) + (input_value & ~mask) 
 
 
 gods=''
