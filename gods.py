@@ -58,6 +58,15 @@
 # two away in distance very often. This is real, no joke. Go to googles random number 
 # generator to see you can use my theory to predict numbers better. Almost like your
 # influencing google, but you are instead enlightened.
+#
+#
+# Use gods_infinite_zompression.zip, and recompress it by opening it to sshex. Or work 
+# backwards and uncompress it. gods_zip.bin, gods_infinite_compression.bin, gods_dist.bin,
+# can be worked backwars. The bin files have the magic data which is structured data 
+# using my discoveries on the interconnectedness of all numbers, including all Primes in 
+# (e), predicting random data, and more. open the bin's to godsarray as hex and pass 
+# gods array to godcompression which creates the original source all the way up to 
+# AMillionRandomDigits.zip, all provided in this repository on github. 
 
 
 def twos_complement(input_value, bits): 
