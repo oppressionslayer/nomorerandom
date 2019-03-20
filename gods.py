@@ -5,7 +5,7 @@
 #   Any use of Infinite Compression commercially or publicly using my ideas or methods 
 #   will be prosecuted by Law. No using in your free software without my permission
 #
-#   Compression Makers. You must hire me or retain my permission with very low royalties
+#   Compression Makers. Please hire me or retain my permission with very low royalties
 #   to use this code or its ideas pertaining to infinite compression. I'm very easy to deal
 #   with and am fair with use rights. I can work on contract and like to work remotely.
 #   I'm also solving other major theories and have uncovered all Primes in (e) and other
