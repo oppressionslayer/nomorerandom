@@ -18,7 +18,7 @@
 #   be of use to all scientists who have been plagued with random data. They can now see
 #   it as having structure, and recipricocity and interconnectednes via a distance formula
 #   and no use of these ideas of recipricocity, interconnectednes via a distance, using 
-#   number complements, and other ideas here are allowed by anyone as i retain there copyrights.
+#   number complements, and other ideas here are not transferable to anyone as i retain there copyrights.
 #
 #  
 #
